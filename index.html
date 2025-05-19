@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PvPch</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="background-image"></div>
+  <div class="animated-strings">
+    <div class="string"></div>
+    <div class="string"></div>
+  </div>
+
+  <div class="container">
+    <h1 class="logo-text">PVPCH</h1>
+
+    <div class="button-grid">
+      <button class="minecraft-button" onclick="showPopup('popupShop')">
+        <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/shopping-cart.svg" class="button-icon"> Администрация
+      </button>
+      <button class="minecraft-button" onclick="showPopup('popupInfo')">
+        <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/info.svg" class="button-icon"> Информация
+      </button>
+      <button class="minecraft-button" onclick="showPopup('popupPlayers')">
+        <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/users.svg" class="button-icon"> Разработчики
+      </button>
+      <button class="minecraft-button" onclick="showPopup('popupTop')">
+        <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/star.svg" class="button-icon"> Топ
+      </button>
+      <button class="minecraft-button" onclick="showPopup('popupRules')">
+        <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/book-open.svg" class="button-icon"> Правила
+      </button>
+      <button class="minecraft-button" onclick="showPopup('popupHelp')">
+        <img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/help-circle.svg" class="button-icon"> Помощь
+      </button>
+    </div>
+
+    <!-- Попапы -->
+    <div id="popupShop" class="popup"><div class="popup-content">
+      <p>Администрация:</p>
+      <p>@MORIARTY7474</p>
+      <p>@Builderlll</p>
+      <p>@m3moriesx</p>
+      <p>@MAKSSPRO2001</p>
+      <p>Гл.Модератор</p>
+      <p>@kyb_player</p>
+      <p>@Kirilleazy</p>
+      <p>@Ichigo_Kurasagi_n1</p>
+      <p>Ст.Модератор</p>
+      <p>@DIKIYF2010</p>
+      <p>@ReneseLotes</p>
+      <p>Мл.Модератор</p>
+      <p>@NEGROMAN22</p>
+      <button onclick="closePopup('popupShop')">Закрыть</button>
+    </div></div>
+
+    <div id="popupInfo" class="popup"><div class="popup-content">
+      <p>Информация о клане:</p>
+      <p>1. Клан был создан в 2014 году на сервере PlayMine...</p>
+      <p>2. Насчитывал 200–300 человек...</p>
+      <p>3. Клану 10,5 лет</p>
+      <button onclick="closePopup('popupInfo')">Закрыть</button>
+    </div></div>
+
+    <div id="popupPlayers" class="popup"><div class="popup-content">
+      <p>Разработчики</p>
+      <p>@kyb_player(Maxsovmaxsov) Разработчик сайта</p>
+      <p>@MAKSSPRO2001 (MAKSSPRO) Дизайн</p>
+      <p>Мы старались и сделали за короткое время не плохой сайт надеюсь вы оцените!</p>
+      <button onclick="closePopup('popupPlayers')">Закрыть</button>
+    </div></div>
+
+    <div id="popupTop" class="popup"><div class="popup-content">
+      <p>Топ игроки:</p>
+      <p>Maxsovmaxsov</p>
+      <p>KARAKURT_</p>
+      <p>VinkNN</p>
+      <p>Myxa</p>
+      <button onclick="closePopup('popupTop')">Закрыть</button>
+    </div></div>
+
+    <div id="popupRules" class="popup"><div class="popup-content">
+      <p>Правила клана:</p>
+      <p>1.Запрещаются моменталки между своими и на территории клан хома.</p>
+      <p>2.Запрещяется оскорблять друг друга и родных.</p>
+      <p>3.Запрещяется пвп без разрешения если пвп включено в клане.</p>
+      <p>4.Взаимопомощь друг другу.</p>
+      <p>5.На просьбу главы клана отвечать и по случаю помогать.</p>
+      <p>6.В рг клан хома игрокам запрещено</p>
+      <p>6.1.Разрешено модерации клана.</p>
+      <p>6.2.Для игроков отдельный рг общага.</p>
+      <p>7.Запрещено строить не пристойные постройки и гриф клана хома и т.д.</p>
+      <p>8.Все вопросы к модерации клана или главе по случаю писать в тг или спрашивать лично.</p>
+      <p>9.Не просить донат если вам сказали нету доната.</p>
+      <button onclick="closePopup('popupRules')">Закрыть</button>
+    </div></div>
+
+    <div id="popupHelp" class="popup"><div class="popup-content">
+      <p>Помощь!</p>
+      <p>Попросить помощь можно у каждого соклана ну или у главных лидеров или замов!</p>
+      <button onclick="closePopup('popupHelp')">Закрыть</button>
+    </div></div>
+
+    <div class="social-icons">
+      <a href="https://t.me/c/1908518007/1"><img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/facebook.svg" alt="Facebook"></a>
+      <a href="https://t.me/c/1908518007/1"><img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/youtube.svg" alt="YouTube"></a>
+      <a href="https://t.me/c/1908518007/1"><img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/instagram.svg" alt="Instagram"></a>
+      <a href="https://t.me/c/1908518007/1"><img src="https://cdn.jsdelivr.net/npm/lucide-static@latest/icons/send.svg" alt="Telegram"></a>
+    </div>
+
+    <div id="mc-server-status">Подключайтесь: Craft.Pe</div>
+  </div>
+
+  <script>
+    function showPopup(id) {
+      const popup = document.getElementById(id);
+      popup.style.display = 'flex';
+    }
+
+    function closePopup(id) {
+      const popup = document.getElementById(id);
+      popup.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
